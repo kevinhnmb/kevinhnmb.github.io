@@ -13129,12 +13129,12 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Table-of-Contents:">Table of Contents:<a class="anchor-link" href="#Table-of-Contents:">&#182;</a></h1><ul>
-    <li><a id="#data_collection">1.  Data Collection</a></li>
-    <li><a id="#data_processing">2.  Data Processing</a></li>
-    <li><a id="#analysis">3.  Exploratory Analysis & Data Visualization</a></li>
-    <li><a id="#linear">4.1 Linear Regression and Hypothesis Test</a></li>
-    <li><a id="ml">4.2 ML</a></li>
-    <li><a id="#insight_policy">5.  Insight and Policy Decisions</a></li>
+    <li><a href="#data_collection">1.  Data Collection</a></li>
+    <li><a href="#data_processing">2.  Data Processing</a></li>
+    <li><a href="#analysis">3.  Exploratory Analysis & Data Visualization</a></li>
+    <li><a href="#linear">4.1 Linear Regression and Hypothesis Test</a></li>
+    <li><a href="#ml">4.2 ML</a></li>
+    <li><a href="#insight_policy">5.  Insight and Policy Decisions</a></li>
 </ul>
 </div>
 </div>
@@ -13142,7 +13142,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.-Data-Collection:">1. <a id="data_collection">Data Collection:</a><a class="anchor-link" href="#1.-Data-Collection:">&#182;</a></h1><h3 id="Covid-19-Data-Collection:">Covid-19 Data Collection:<a class="anchor-link" href="#Covid-19-Data-Collection:">&#182;</a></h3><p>In the Data Collection stage of the Data Lifecycle, we will focus on fetching data from a Google service called BigQuery. BigQuery provides public datasets for any Google Cloud user. Once the desired data is retrieved, we will insert that data into a dataframe for later use.</p>
+<h1 id="1.-Data-Collection:">1. <b id="data_collection">Data Collection:</b><a class="anchor-link" href="#1.-Data-Collection:">&#182;</a></h1><h3 id="Covid-19-Data-Collection:">Covid-19 Data Collection:<a class="anchor-link" href="#Covid-19-Data-Collection:">&#182;</a></h3><p>In the Data Collection stage of the Data Lifecycle, we will focus on fetching data from a Google service called BigQuery. BigQuery provides public datasets for any Google Cloud user. Once the desired data is retrieved, we will insert that data into a dataframe for later use.</p>
 <p>The first set of data needed is the data on the number of confirmed Covid19 cases in the United States.</p>
 
 </div>
@@ -14945,7 +14945,7 @@ Collect Data in batches since the AirNow API limits to 500 requests and range qu
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.-Data-Processing:"><a id="data_collection">2. Data Processing:</a><a class="anchor-link" href="#2.-Data-Processing:">&#182;</a></h1><p>In the Data Processing stage of the Data Lifecycle, we will organize and narrow down the data we want to use for
+<h1 id="2.-Data-Processing:">2. <b id="data_processing">Data Processing:</b><a class="anchor-link" href="#2.-Data-Processing:">&#182;</a></h1><p>In the Data Processing stage of the Data Lifecycle, we will organize and narrow down the data we want to use for
 our analysis. In the BigQuery Covid19 Confirmed Cases dataset, the data goes all the way back to January 22, 2020
 and is still collecting and publishing data. To simplify our analysis we will focus on data that was
 collected from May 1, 2020 to May 31, 2020.
@@ -19845,7 +19845,7 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><a id="analysis">3. Exploratory Analysis & Data Visualization:</a></h1>
+<h1>3. <b id="analysis">Exploratory Analysis & Data Visualization:</b></h1>
 <p>At this point, our data is ready to analyze. In this part, we will visualize the data we just cleaned and collected from the previos sections with some plots and map in order to portray and explain the trend of deaths in the United States. Also, statistical measurement for this data is included.</p>
 
 </div>
@@ -20487,7 +20487,7 @@ We will visualize the data we retrieved above using the strategy aboce but it wi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="4.1:-Linear-Regression-and-Hypothesis-Test"><a id="linear">4.1: Linear Regression and Hypothesis Test</a><a class="anchor-link" href="#4.1:-Linear-Regression-and-Hypothesis-Test">&#182;</a></h1><p>Now that we have our analysis done we can start doing linear regression and test our predictions. When doing a linear regression, we're taking data that is already there and predicting future data base on the patterns of the data we already have. We are going to take a linear regression of just our # of Cases vs Date data and compare it to another regression when taking account States using a f test. And we predict that if we can account many factors, we will be able to have more accurate predictions.</p>
+<h1 id="4.1.-Linear-Regression-and-Hypothesis-Test"><b id="linear">4.1. Linear Regression and Hypothesis Test</b><a class="anchor-link" href="#4.1.-Linear-Regression-and-Hypothesis-Test">&#182;</a></h1><p>Now that we have our analysis done we can start doing linear regression and test our predictions. When doing a linear regression, we're taking data that is already there and predicting future data base on the patterns of the data we already have. We are going to take a linear regression of just our # of Cases vs Date data and compare it to another regression when taking account States using a f test. And we predict that if we can account many factors, we will be able to have more accurate predictions.</p>
 
 </div>
 </div>
@@ -21727,7 +21727,7 @@ In order to verify our hypothesis, we would like to introduce f-test. The purpos
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="4.2.-Machine-Learning"><a id="ml">4.2. Machine Learning</a><a class="anchor-link" href="#4.2.-Machine-Learning">&#182;</a></h1><p>We will cluster states based off their air quality, latitude, longitude. This will allow us to see similar states and view how location and air quality impact COVID-19 cases. Our hypothesis is that the distribution of COVID-19 cases will be small within clusters. For this analysis, we will use the Kmeans package in sklearn.</p>
+<h1 id="4.2.-Machine-Learning">4.2. <b id="ml">Machine Learning</b><a class="anchor-link" href="#4.2.-Machine-Learning">&#182;</a></h1><p>We will cluster states based off their air quality, latitude, longitude. This will allow us to see similar states and view how location and air quality impact COVID-19 cases. Our hypothesis is that the distribution of COVID-19 cases will be small within clusters. For this analysis, we will use the Kmeans package in sklearn.</p>
 <p>Our first step is determining the optimal k value for clusters.</p>
 
 </div>
@@ -22658,7 +22658,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Insight-and-Policy-Decisions">Insight and Policy Decisions<a class="anchor-link" href="#Insight-and-Policy-Decisions">&#182;</a></h3><ul>
+<h1 id="5.-Insight-and-Policy-Decisions">5. <b id="insight_policy">Insight and Policy Decisions</b><a class="anchor-link" href="#5.-Insight-and-Policy-Decisions">&#182;</a></h1><ul>
     <li>As time passed in May, the number of COVID-19 cases increased.</li>
     <li>States had varying number of COVID-19 cases, which makes sense because each state manages quarantine differently.</li>
     <li>Since AQI was determined to not be a safe predictor for COVID-19, conclusions about the relationship between air pollution and COVID-19 cases can not be made.</li>
@@ -22667,6 +22667,19 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </ul>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
