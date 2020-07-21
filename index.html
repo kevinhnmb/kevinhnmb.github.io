@@ -22172,7 +22172,7 @@ With scikit-learn, you can calculate the silhouette coefficients for all the dat
 <div class="prompt input_prompt">In&nbsp;[458]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">[</span><span class="s1">&#39;cluster&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_hat</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="p">[</span><span class="err">‘</span><span class="n">cluster</span><span class="err">’</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_hat</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">X</span>
 </pre></div>
 
@@ -22655,18 +22655,18 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Insight-and-Policy-Decisions">Insight and Policy Decisions<a class="anchor-link" href="#Insight-and-Policy-Decisions">&#182;</a></h3><ul>
+    <li>As time passed in May, the number of COVID-19 cases increased.</li>
+    <li>States had varying number of COVID-19 cases, which makes sense because each state manages quarantine differently.</li>
+    <li>Since AQI was determined to not be a safe predictor for COVID-19, conclusions about the relationship between air pollution and COVID-19 cases can not be made.</li>
+    <li>In the future, we could find more comprehensive data, analyze AQI more in depth per state, and take into account other state factors such as quarantine implementation.</li>
+    <li>Analyzing AQI could allow better decisions to be made about reducing emissions in the US.</li>
+</ul>
 </div>
 </div>
-
 </div>
     </div>
   </div>
